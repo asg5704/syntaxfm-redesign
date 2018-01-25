@@ -10,6 +10,7 @@
   <style>
     body {
       background-color: pink;
+      height: 2500px;
     }
     main {
       width: 90%;
@@ -21,7 +22,17 @@
         background-color: green;
       }
       main {
-        min-width: 50%;
+        width: 50%;
+        min-width: 480px;
+      }
+    }
+    @media (min-width: 840px) {
+      body {
+        background-color: yellow;
+      }
+      main {
+        width: 33.3%;
+        max-width: 850px;
       }
     }
   </style>

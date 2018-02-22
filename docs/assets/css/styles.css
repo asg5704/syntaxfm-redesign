@@ -3,7 +3,6 @@
 @import 'base/_mixins';
 @import 'base/_global';
 @import 'modules/_footer';
-@import 'modules/_column';
 @import 'modules/_header';
 @import 'modules/_nowplayui';
 @import 'modules/_ep-description';

@@ -1,0 +1,134 @@
+h1 {
+  font-size: 2.45rem;
+  font-family: 'Barlow Condendsed', sans-serif;
+  width: 96%;
+  margin: 5px auto -30px auto;
+  text-transform: uppercase;
+  letter-spacing: -0.25rem;
+  color: $mainRed;
+
+  @mixin atSmall {
+    margin-bottom: -45px;
+  }
+}
+
+.header__buttons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+  padding: 15px;
+  width: 33.33%;
+  border-left: 1px solid $mainBlue;
+  border-top: 1px solid $mainBlue;
+  background-color: $bgColor;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-left: -1.2px;
+  font-size: 1.3rem;
+
+  @mixin atSmall {
+    font-size: 2rem;
+  }
+}
+
+.searchBar {
+  width: 100%;
+  background-color: $mainBlue;
+  border: none;
+  height: 45px;
+  color: $mainBlack;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 2px 7px #bbb;
+
+  @mixin atSmall {
+    height: 75px;
+    font-size: 1.4rem;
+  }
+}
+
+.search::-webkit-input-placeholder {
+  color: $mainBlack;
+  font-size: 1.4rem;
+}
+.search {
+  background-color: $mainBlue;
+  border: none;
+  width: 80%;
+
+  @mixin atSmall {
+    position: relative;
+    left: -60px;
+    width: 100%;
+  }
+}
+
+#searchIcon {
+  width: 20%;
+  padding-left: 1rem;
+
+  @mixin atSmall {
+    position: relative;
+    left: -40px;
+  }
+}
+
+span.the {
+  text-align: left;
+  margin-bottom: 0;
+  text-shadow: 1.5px 1.5px 1.5px #555;
+
+  @mixin atSmall {
+    font-size: 3.1rem;
+  }
+}
+span.author {
+  font-size: 2.9rem;
+  position: relative;
+  top: -8px;
+  text-shadow: 2px 2px 2px #555;
+
+  @mixin atSmall {
+    font-size: 3.6rem;
+    width: 100%;
+    top: -16px;
+  }
+}
+span.show {
+  font-weight: 800;
+  font-size: 5rem;
+  position: relative;
+  top: -32px;
+  text-shadow: 2px 2px 2px #444;
+
+  @mixin atSmall {
+    font-size: 6.2rem;
+    top: -48px;
+  }
+}
+.logo {
+  width: 85%;
+  margin: 0 auto;
+
+  @mixin atSmall {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  @mixin atLarge {
+    width: 40%;
+  }
+}
+
+
+
+
+
+

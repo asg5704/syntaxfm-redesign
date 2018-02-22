@@ -1,6 +1,6 @@
-# Syntax.FM Redesign
+# Tim Ferriss Podcast Redesign
 
-This is a re-design of the Syntax.FM podcast as part of a class project in ART-269 - Responsive Web Design
+This is a re-design of the Tim Ferriss Podcast podcast as part of a class project in ART-269 - Responsive Web Design
 
 ## Todo
 

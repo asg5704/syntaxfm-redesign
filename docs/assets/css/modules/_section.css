@@ -1,0 +1,22 @@
+.section {
+  padding: 3px 15px 3px 15px;
+  box-shadow: 0 0px 2.5px #ddd;
+  background-color: $bgColor;
+  width: 100%;
+
+  > a {
+    text-decoration: none;
+  }
+
+  > p {
+    text-align: left;
+    margin-top: 0;
+
+    @mixin atSmall {
+      font-size: 1.34rem;
+      position: relative;
+      top: 7px;
+    }
+
+  }
+}

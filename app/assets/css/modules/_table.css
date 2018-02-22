@@ -1,0 +1,66 @@
+.table-data {
+
+  table {
+    border: 1px solid $mainBlack;
+    border-collapse: collapse;
+    margin: 15px 0 0 0;
+    padding: 0;
+    width: 100%;
+    color: $mainBlack;
+    background-color: $bgColor;
+    table-layout: fixed;
+  }
+
+  table caption {
+    opacity: 0;
+    height: 0;
+  }
+
+  table tr {
+    background: $bgColor;
+    border: 1px solid $mainBlack;
+    padding: 0.35em;
+  }
+
+  table th, table td {
+    padding: 0.625em;
+    text-align: left;
+  }
+  table th {
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    background-color: $mainBlue;
+
+    &:first-child {
+      width: 55px;
+      max-width: 75px;
+    }
+
+    @mixin atSmall {
+      font-size: 1.29rem;
+    }
+  }
+
+  td {
+    border-bottom: 1px solid $mainBlack;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @mixin atSmall {
+      font-size: 1.17rem;
+    }
+  }
+
+  .med-episode {
+    @media screen and (max-width: 645px) {
+      display: none;
+    }
+  }
+  .lg-episode {
+    @media screen and (max-width: 1020px) {
+      display:  none;
+    }
+  }
+
+}

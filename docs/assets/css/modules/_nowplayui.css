@@ -1,0 +1,141 @@
+h2 {
+    color: $mainRed;
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+
+    @mixin atLarge {
+      position: relative;
+      left: 15px;
+    }
+}
+
+.ui-controls {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @mixin atLarge {
+    height: 190px;
+  }
+
+  > p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+
+    @mixin atLarge {
+      width: 69%;
+    }
+  }
+
+  p > span {
+    color: $mainRed;
+
+    @mixin atSmall {
+      font-size: 1.27rem;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &__btn-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @mixin atLarge {
+      justify-content: flex-end;
+      position: relative;
+      top: -76.5px;
+    }
+
+    > button {
+      width: 74px;
+      height: 62px;
+      font-size: 0.6rem;
+      background-color: $mainBlue;
+      outline: none;
+      border: none;
+      text-align: center;
+      color: $mainBlack;
+    }
+    .play {
+      width: 46%;
+    }
+    .rewind, .fast-forward {
+      width: 25%;
+    }
+    .play, .rewind, .fast-forward {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      @mixin atSmall {
+        font-size: 0.94rem;
+        height: 75px;
+      }
+
+      @mixin atLarge {
+        width: 10%;
+      }
+    }
+
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @mixin atLarge {
+      justify-content: flex-end;
+      position: relative;
+      top: -70px;
+    }
+
+     > button {
+      width: 48.5%;
+      height: 62px;
+      font-size: 0.6rem;
+      outline: none;
+      border: none;
+      background-color: $mainRed;
+      color: $mainBlack;
+      margin: 6px auto;
+      text-align: center;
+
+      @mixin atLarge {
+        margin: 0;
+      }
+    }
+    .subscribe, .download {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      @mixin atSmall {
+        font-size: 0.94rem;
+        height: 75px;
+      }
+
+      @mixin atLarge {
+        width: 15%;
+
+      }
+    }
+  }
+
+
+}
+

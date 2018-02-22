@@ -1,0 +1,60 @@
+#episode-description, #now-playing, #episodes, #about {
+  width: 100%;
+
+  @mixin atSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  @mixin atLarge {
+    margin: 0;
+  }
+
+}
+
+#now-playing {
+  @mixin atLarge {
+    width: 100%;
+  }
+}
+
+#episode-description {
+  @mixin atLarge {
+    width: 500px;
+    order: 2;
+    flex-basis: auto;
+    position: relative;
+    margin: 0;
+    left: 550px;
+  }
+}
+
+#episodes {
+  @mixin atLarge {
+    width: 500px;
+    order: 1;
+    flex-basis: auto;
+    position: relative;
+    margin: 0;
+    top: -682px;
+  }
+}
+
+#about {
+  @mixin atLarge {
+    width: 500px;
+    order: 3;
+    flex-basis: auto;
+    position: relative;
+    top: -900px;
+    left: 550px;
+  }
+}
+
+main {
+  @mixin atLarge {
+    height: 1750px;
+  }
+}

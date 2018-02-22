@@ -1,0 +1,20 @@
+#episode-description {
+
+ > p {
+   @mixin atSmall {
+     color: yellow;
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+}

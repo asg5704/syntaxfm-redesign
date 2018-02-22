@@ -450,7 +450,7 @@ body {
   font-family: 'Gentium Basic', serif;
   color: #011627;
   font-size: 16px;
-  background-color: white;
+  background-color: #011627;
 }
 
 img {
@@ -512,9 +512,8 @@ h1 {
 li {
   list-style-type: none;
   padding: 15px;
-  width: 33.33%;
+  width: 33.43%;
   border-left: 1px solid #2ec4b6;
-  border-top: 1px solid #2ec4b6;
   background-color: #efffe9;
   font-family: 'Barlow Condensed', sans-serif;
   margin-left: -1.2px;
@@ -537,7 +536,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 2px 2px 7px #bbb;
+  box-shadow: 2px 2px 7px #555;
 }
 
 @media (min-width: 645px) {
@@ -584,7 +583,7 @@ li {
 span.the {
   text-align: left;
   margin-bottom: 0;
-  text-shadow: 1.5px 1.5px 1.5px #555;
+  text-shadow: 1.5px 1.5px 1.5px #333;
 }
 
 @media (min-width: 645px) {
@@ -598,7 +597,7 @@ span.author {
   font-size: 2.9rem;
   position: relative;
   top: -8px;
-  text-shadow: 2px 2px 2px #555;
+  text-shadow: 2px 2px 2px #333;
 }
 
 @media (min-width: 645px) {
@@ -615,7 +614,7 @@ span.show {
   font-size: 5rem;
   position: relative;
   top: -32px;
-  text-shadow: 2px 2px 2px #444;
+  text-shadow: 2px 2px 2px #333;
 }
 
 @media (min-width: 645px) {
@@ -644,6 +643,20 @@ span.show {
   .logo {
     width: 40%;
   }
+}
+
+header {
+  background-image: url(/assets/images/tfs-banner.jpg);
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 h2 {
@@ -837,6 +850,7 @@ h2 {
 
 #episode-description, #now-playing, #episodes, #about {
   width: 100%;
+  flex-basis: auto;
 
 }
 
@@ -867,44 +881,29 @@ h2 {
 @media (min-width: 1160px) {
 
   #episode-description {
-    width: 500px;
+    width: 46%;
     order: 2;
-    flex-basis: auto;
-    position: relative;
-    margin: 0;
-    left: 550px;
+    align-self: flex-start;
   }
 }
 
 @media (min-width: 1160px) {
 
   #episodes {
-    width: 500px;
+    width: 46%;
     order: 1;
-    flex-basis: auto;
-    position: relative;
-    margin: 0;
-    top: -682px;
   }
 }
 
 @media (min-width: 1160px) {
 
   #about {
-    width: 500px;
     order: 3;
-    flex-basis: auto;
-    position: relative;
-    top: -900px;
-    left: 550px;
   }
 }
 
-@media (min-width: 1160px) {
-
-  main {
-    height: 1750px;
-  }
+main {
+  height: 100%;
 }
 
 #about a {

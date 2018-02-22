@@ -24,9 +24,8 @@ h1 {
 li {
   list-style-type: none;
   padding: 15px;
-  width: 33.33%;
+  width: 33.43%;
   border-left: 1px solid $mainBlue;
-  border-top: 1px solid $mainBlue;
   background-color: $bgColor;
   font-family: 'Barlow Condensed', sans-serif;
   margin-left: -1.2px;
@@ -46,7 +45,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 2px 2px 7px #bbb;
+  box-shadow: 2px 2px 7px #555;
 
   @mixin atSmall {
     height: 75px;
@@ -83,7 +82,7 @@ li {
 span.the {
   text-align: left;
   margin-bottom: 0;
-  text-shadow: 1.5px 1.5px 1.5px #555;
+  text-shadow: 1.5px 1.5px 1.5px #333;
 
   @mixin atSmall {
     font-size: 3.1rem;
@@ -93,7 +92,7 @@ span.author {
   font-size: 2.9rem;
   position: relative;
   top: -8px;
-  text-shadow: 2px 2px 2px #555;
+  text-shadow: 2px 2px 2px #333;
 
   @mixin atSmall {
     font-size: 3.6rem;
@@ -106,7 +105,7 @@ span.show {
   font-size: 5rem;
   position: relative;
   top: -32px;
-  text-shadow: 2px 2px 2px #444;
+  text-shadow: 2px 2px 2px #333;
 
   @mixin atSmall {
     font-size: 6.2rem;
@@ -127,6 +126,9 @@ span.show {
   }
 }
 
+header {
+  background-image: url(/assets/images/tfs-banner.jpg);
+}
 
 
 

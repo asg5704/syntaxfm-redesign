@@ -18,5 +18,9 @@
       top: 7px;
     }
 
+    @mixin atLarge {
+      line-height: 1.618;
+      margin-bottom: 10px;
+    }
   }
 }

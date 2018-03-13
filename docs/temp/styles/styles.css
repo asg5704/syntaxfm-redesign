@@ -480,6 +480,7 @@ h2 {
 
 footer {
   text-align: center;
+  color: #efffe9;
 }
 
 h1 {
@@ -925,7 +926,6 @@ main {
 .section > p {
     text-align: left;
     margin-top: 0;
-
   }
 
 @media (min-width: 645px) {
@@ -934,6 +934,14 @@ main {
     font-size: 1.34rem;
     position: relative;
     top: 7px;
+  }
+}
+
+@media (min-width: 1160px) {
+
+  .section > p {
+    line-height: 1.618;
+    margin-bottom: 10px;
   }
 }
 
